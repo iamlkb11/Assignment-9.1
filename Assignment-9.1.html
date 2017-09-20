@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html><!-- Head of the Root -->
+	<head><!-- child sub root of the html tag as head tag  -->
+		<!-- it is a title tag -->
+		<title>Bootstrap Popover</title>
+		<meta charset="utf-8">
+  		<meta name="viewport" content="width=device-width, initial-scale=1">
+  		<!-- Bootstrap libraries along with it's dependencies on jquery and javascripts, -->
+  		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  			<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+   			</script>
+  			<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js">
+  			</script>
+	</head>
+	<!-- it is a body tag -->
+	<body>
+		<!-- container class which has it's padding and the text will be centered -->
+		<div class="container text-center">
+		<h1>Bootstrap Popover.</h1>
+		<br>
+		<!-- Buttons with popover defined using data-toggle attribute. Title will act as a header and data-contents will display as it's content -->
+		<button type="button" class="btn btn-primary" data-toggle="popover" data-placement="top" title="Popover Title" data-content="Default Popover">Popover</button>
+			
+		<button type="button" class="btn btn-success" data-toggle="popover" data-placement="top" title="Popover Title" data-content="Another Popover">Another Popover</button>
+			
+		<button type="button" class="btn btn-info" data-toggle="popover" data-placement="top" title="Popover Title" data-content="A larger Popover to demonstrate the max-width of the bootstrap popover">Large Popover</button>
+			
+		<button type="button" class="btn btn-warning" data-toggle="popover" data-placement="top" title="Popover Title" data-content="The last Popover!">Last Popover</button>
+		
+		</div>
+		<script>
+		//Jquery popover method to display popover contents.
+		$(document).ready(function()
+		{
+    	$('[data-toggle="popover"]').popover();   
+		});
+		</script>
+
+	</body>
+</html>
